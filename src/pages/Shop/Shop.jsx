@@ -166,36 +166,41 @@ const Shop = ({ fromHome }) => {
 
 
       {/* Pagination Controls */}
-      <div className="flex justify-center items-center mt-6 gap-2">
-        <button
-          className="px-3 py-1 bg-base-200 rounded disabled:opacity-50"
-          disabled={currentPage === 1}
-          onClick={() => setCurrentPage((prev) => prev - 1)}
-        >
-          Prev
-        </button>
+      {
+        !fromHome && (
+          <div className="flex justify-center items-center mt-6 gap-2">
+            <button
+              className="px-3 py-1 bg-base-200 rounded disabled:opacity-50"
+              disabled={currentPage === 1}
+              onClick={() => setCurrentPage((prev) => prev - 1)}
+            >
+              Prev
+            </button>
 
-        {[...Array(totalPages).keys()].map((num) => (
-          <button
-            key={num + 1}
-            onClick={() => setCurrentPage(num + 1)}
-            className={`px-3 py-1 rounded ${currentPage === num + 1
-              ? "bg-blue-500 text-white"
-              : "bg-base-200"
-              }`}
-          >
-            {num + 1}
-          </button>
-        ))}
+            {[...Array(totalPages).keys()].map((num) => (
+              <button
+                key={num + 1}
+                onClick={() => setCurrentPage(num + 1)}
+                className={`px-3 py-1 rounded ${currentPage === num + 1
+                  ? "bg-blue-500 text-white"
+                  : "bg-base-200"
+                  }`}
+              >
+                {num + 1}
+              </button>
+            ))}
 
-        <button
-          className="px-3 py-1 bg-base-200 rounded disabled:opacity-50"
-          disabled={currentPage === totalPages}
-          onClick={() => setCurrentPage((prev) => prev + 1)}
-        >
-          Next
-        </button>
-      </div>
+            <button
+              className="px-3 py-1 bg-base-200 rounded disabled:opacity-50"
+              disabled={currentPage === totalPages}
+              onClick={() => setCurrentPage((prev) => prev + 1)}
+            >
+              Next
+            </button>
+          </div>
+        )
+      }
+
     </div>
   );
 };

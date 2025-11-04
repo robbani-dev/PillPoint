@@ -19,8 +19,8 @@ export default function DiscountSlider() {
       <Swiper
         slidesPerView={4}
         spaceBetween={25}
-        // pagination={{ clickable: true }}
-        autoplay={{ delay: 1200, disableOnInteraction: false }}
+        pagination={{ clickable: true }}
+        autoplay={{ delay: 2500, disableOnInteraction: false }}
         modules={[Pagination, Autoplay]}
         loop={true}
         className="discount-swiper"
@@ -37,7 +37,7 @@ export default function DiscountSlider() {
           return (
             <SwiperSlide key={item._id}>
               <Link to={`/product/${item._id}`}>
-                <div className="card bg-base-200 my-2 shadow-2xl">
+                <div className="card bg-base-200 my-2 shadow-sm hover:shadow-lg transition duration-300">
                   <figure>
                     <img
                       src={item.imgUrl || "https://via.placeholder.com/200"}
@@ -55,9 +55,9 @@ export default function DiscountSlider() {
                       </div>
                     </h2>
                     <div className="card-actions justify-end">
-                      <span className="old-price">Tk {price.toFixed(2)}</span>
+                      <span className="old-price"><del>Tk {price.toFixed(2)}</del></span>
                       <span className="new-price">
-                        Tk {discountedPrice.toFixed(2)}
+                        <ins style={{textDecoration: "none"}} className="text-blue-500">Tk {discountedPrice.toFixed(2)}</ins>
                       </span>
                     </div>
                   </div>

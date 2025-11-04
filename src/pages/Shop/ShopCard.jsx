@@ -4,14 +4,14 @@ import { Link } from "react-router"
 
 const ShopCard = ({ item }) => {
     return (
-        <Link to={`/product/${item._id}`} className="card bg-base-100 shadow-2xl">
+        <Link to={`/product/${item._id}`} className="card bg-base-100 shadow-sm hover:shadow-lg transition-shadow duration-200">
 
             <div>
                 <figure>
                     <img
                         src={item.imgUrl}
                         alt={item.itemName}
-                        className="h-42 opacity-100 hover:opacity-80 object-cover"></img>
+                        className="h-42 object-cover"></img>
                 </figure>
                 <div className="p-2">
                     <div className="p-2 flex justify-between items-center">
@@ -23,7 +23,7 @@ const ShopCard = ({ item }) => {
                         <p className="italic">{parseFloat(item.perUnitPrice).toFixed(0)}<span>TK</span></p>
                     </div>
                     <div className="p-2 flex justify-between items-center">
-                        <p className="text-yellow-400">Diacount:</p>
+                        <p className="text-yellow-400">Discount:</p>
                         <p className="text-yellow-400">{item.discount}%</p>
                     </div>
                     
