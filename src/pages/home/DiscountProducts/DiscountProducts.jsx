@@ -37,7 +37,7 @@ export default function DiscountSlider() {
           return (
             <SwiperSlide key={item._id}>
               <Link to={`/product/${item._id}`}>
-                <div className="card bg-base-200 my-2 shadow-sm hover:shadow-lg transition duration-300">
+                <div className="card bg-base-200 my-10 shadow-sm hover:shadow-lg transition duration-300">
                   <figure>
                     <img
                       src={item.imgUrl || "https://via.placeholder.com/200"}
@@ -57,7 +57,7 @@ export default function DiscountSlider() {
                     <div className="card-actions justify-end">
                       <span className="old-price"><del>Tk {price.toFixed(2)}</del></span>
                       <span className="new-price">
-                        <ins style={{textDecoration: "none"}} className="text-blue-500">Tk {discountedPrice.toFixed(2)}</ins>
+                        <ins style={{ textDecoration: "none" }} className="text-blue-500">Tk {discountedPrice.toFixed(2)}</ins>
                       </span>
                     </div>
                   </div>
