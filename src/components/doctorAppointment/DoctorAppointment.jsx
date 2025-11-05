@@ -286,7 +286,7 @@ export default function DoctorAppointment() {
     <div className="contain">
       <header className="mb-6">
         <h1 className="text-2xl font-bold">Book a Doctor Appointment</h1>
-        <p className="text-sm text-gray-600">Search, filter and book from our list of verified doctors.</p>
+        <p className="text-sm">Search, filter and book from our list of verified doctors.</p>
       </header>
 
       <section className="grid md:grid-cols-3 gap-4 mb-6">
@@ -297,12 +297,12 @@ export default function DoctorAppointment() {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
           />
-          <select className="p-2 border rounded-md" value={specialty} onChange={(e) => setSpecialty(e.target.value)}>
+          <select className="p-2 border rounded-md select" value={specialty} onChange={(e) => setSpecialty(e.target.value)}>
             {specialties.map((s) => (
               <option key={s} value={s}>{s}</option>
             ))}
           </select>
-          <select className="p-2 border rounded-md" value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
+          <select className="p-2 border rounded-md select" value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
             <option value="rating">Sort: Rating</option>
             <option value="experience">Sort: Experience</option>
             <option value="fee">Sort: Fee (low to high)</option>
@@ -310,7 +310,7 @@ export default function DoctorAppointment() {
         </div>
 
         <div className="flex items-center justify-end gap-3">
-          <div className="text-sm text-gray-600">Total doctors: <span className="font-semibold">{filtered.length}</span></div>
+          <div className="text-sm ">Total doctors: <span className="font-semibold">{filtered.length}</span></div>
         </div>
       </section>
 
