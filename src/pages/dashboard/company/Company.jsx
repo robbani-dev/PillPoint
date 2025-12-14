@@ -48,7 +48,7 @@ const Company = () => {
       </Helmet>
       <div className="p-4">
         <button
-          className="btn shadow w-full btn-outline"
+          className="btn shadow w-full btn-primary"
           id="xx"
           onClick={() => document.getElementById("my_modal_3").showModal()}
         >
@@ -77,23 +77,23 @@ const Company = () => {
               <legend className="fieldset-legend">Company Name :</legend>
               <input
                 type="text"
-                className="input"
+                className="input i-s"
                 placeholder="Company Name"
                 name="companyName"
                 required
               />
             </fieldset>
             <fieldset className="fieldset">
-              <legend className="fieldset-legend">Company Logo :</legend>
+              <legend className="fieldset-legend">Company Logo URL :</legend>
               <input
                 type="url"
-                className="input"
-                placeholder="Company Logo"
+                className="input i-s"
+                placeholder="Company Logo URL"
                 name="companyLogo"
                 required
               />
             </fieldset>
-            <button type="submit" className="btn shadow w-full mt-2">
+            <button type="submit" className="btn shadow w-full mt-2 btn-primary">
               Add Company
             </button>
           </form>

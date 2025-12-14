@@ -62,7 +62,7 @@ const ManageCategory = () => {
       </Helmet>
       <div className="p-4">
         <button
-          className="btn btn-outline btn-info w-full hover:shadow"
+          className="btn btn-primary w-full hover:shadow"
           onClick={() => document.getElementById("my_modal_3").showModal()}
         >
           Add A New Category.
@@ -80,19 +80,19 @@ const ManageCategory = () => {
             <input
               type="text"
               placeholder="Category name"
-              className="input"
+              className="input i-s"
               name="category_name"
             />
             <legend className="label">Select Profile Picture</legend>
             <input
               type="file"
               accept="image/*"
-              className="file-input"
+              className="file-input i-s"
               name="image"
             />
             <label className="label block">Max size 2MB</label> <br />
             <div className="flex justify-between">
-              <button className="btn" type="submit">
+              <button className="btn btn-primary" type="submit">
                 Add Category
               </button>
 

@@ -70,7 +70,7 @@ const UsersCard = ({ user }) => {
             <div>
               <div className="font-bold">{user.username}</div>
               <div
-                className={`text-sm font-bold badge badge-success badge-sm text-center ${
+                className={`text-sm font-bold badge badge-primary badge-sm text-center ${
                   user.userType === "Admin" && "text-red-600"
                 }`}
               >

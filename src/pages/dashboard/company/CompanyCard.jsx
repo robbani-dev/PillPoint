@@ -1,6 +1,6 @@
 const CompanyCard = ({com}) => {
   return (
-    <div className="card border shadow-sm bg-blue-300 hover:bg-pink-400 p-2">
+    <div className="card shadow-sm bg-primary hover:bg-pink-400 p-2 transition-all duration-300">
       <figure className="relative">
         <img
           src={com.companyLogo}
@@ -9,7 +9,7 @@ const CompanyCard = ({com}) => {
         />
       </figure>
       <div className="card-body items-center text-center">
-        <h2 className="card-title">{com.companyName}</h2>
+        <h2 className="card-title text-primary-content">{com.companyName}</h2>
       </div>
     </div>
   );

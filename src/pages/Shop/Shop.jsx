@@ -89,32 +89,40 @@ const Shop = ({ fromHome }) => {
       <Helmet>
         <title>PillPoint | Shop</title>
       </Helmet>
-      <h1 className="title-section">
-        Shop Medicines
-      </h1>
+      <div className="flex justify-between">
+
+        <div>
+          <h1 className="title-section">
+            Shop Medicines
+          </h1>
+        </div>
+
+
+        {/* Sort Dropdown */}
+        {
+          !fromHome &&
+
+          <div>
+            <select
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value)}
+              className="px-3 py-1 rounded border border-primary focus:outline-none focus:ring-2 focus:ring-primary"
+            >
+              <option value="">Sort By</option>
+              <option value="priceAsc">Price: Low to High</option>
+              <option value="priceDesc">Price: High to Low</option>
+              <option value="discount">Discount: High to Low</option>
+              <option value="name">Name: A to Z</option>
+            </select>
+          </div>
+        }
+
+      </div>
 
       {
         loading && <FormLoading />
       }
 
-      {/* Sort Dropdown */}
-      {
-        !fromHome &&
-
-        <div className="flex justify-end mb-4">
-          <select
-            value={sortBy}
-            onChange={(e) => setSortBy(e.target.value)}
-            className="px-3 py-1 rounded  border"
-          >
-            <option value="">Sort By</option>
-            <option value="priceAsc">Price: Low to High</option>
-            <option value="priceDesc">Price: High to Low</option>
-            <option value="discount">Discount: High to Low</option>
-            <option value="name">Name: A to Z</option>
-          </select>
-        </div>
-      }
       {/* <div className="overflow-x-auto">
         <table className="min-w-full border-collapse border">
           <thead>

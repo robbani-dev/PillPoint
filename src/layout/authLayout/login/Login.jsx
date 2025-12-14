@@ -63,7 +63,7 @@ const Login = () => {
               required: true,
             })}
             type="email"
-            className="input"
+            className="input i-s"
             placeholder="Email"
             defaultValue="admin@pillpoint.com"
           />
@@ -75,7 +75,7 @@ const Login = () => {
             <input
               type={showPass ? "text" : "password"}
               placeholder="Password"
-              className="input"
+              className="input i-s"
               {...register("password", {
                 required: "Password is required",
                 minLength: {
@@ -89,7 +89,7 @@ const Login = () => {
               })}
             />
             <div className="absolute right-5 top-1/2 text-lg z-10">
-              <button type="button" onClick={showPassword}>
+              <button type="button" onClick={showPassword} className="text-primary">
                 {showPass ? <FaRegEyeSlash /> : <FaRegEye />}
               </button>
             </div>
@@ -100,21 +100,21 @@ const Login = () => {
               {errors.password.message}
             </p>
           )}
-          <Link to="/forgot" className="link link-hover">
+          <Link to="/forgot" className="link link-hover text-primary">
             Forgot password?
           </Link>
-          <button className="btn btn-neutral mt-4">Login</button>
+          <button className="btn btn-primary">Login</button>
         </form>
         <div>
           <p>
             Don't Have An Account?{" "}
-            <Link className="link link-hover text-blue-500" to="/register">
+            <Link className="link link-hover text-primary" to="/register">
               Register.
             </Link>
           </p>
           <div className="border p-1 rounded-sm">
-            <p className="italic text-blue-500">Login Email: admin@pillpoint.com</p>
-            <p className="italic text-blue-500">Login password: Admin2025</p>
+            <p className="italic text-primary">Login Email: admin@pillpoint.com</p>
+            <p className="italic text-primary">Login password: Admin2025</p>
           </div>
         </div>
       </div>

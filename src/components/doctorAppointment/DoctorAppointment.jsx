@@ -283,26 +283,26 @@ export default function DoctorAppointment() {
   }
 
   return (
-    <div className="contain">
+    <div className="c-container b-p">
       <header className="mb-6">
-        <h1 className="text-2xl font-bold">Book a Doctor Appointment</h1>
+        <h1 className="title-section" style={{marginBottom: "10px"}}>Book a Doctor Appointment</h1>
         <p className="text-sm">Search, filter and book from our list of verified doctors.</p>
       </header>
 
       <section className="grid md:grid-cols-3 gap-4 mb-6">
         <div className="md:col-span-2 flex gap-2">
           <input
-            className="flex-1 p-2 border rounded-md"
+            className="flex-1 p-2 border border-primary rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
             placeholder="Search by name, specialty or location"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
           />
-          <select className="p-2 border rounded-md select" value={specialty} onChange={(e) => setSpecialty(e.target.value)}>
+          <select className="p-2 border border-primary focus:outline-none focus:ring-2 focus:ring-primary rounded-md select" value={specialty} onChange={(e) => setSpecialty(e.target.value)}>
             {specialties.map((s) => (
               <option key={s} value={s}>{s}</option>
             ))}
           </select>
-          <select className="p-2 border rounded-md select" value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
+          <select className="p-2 border border-primary focus:outline-none focus:ring-2 focus:ring-primary rounded-md select" value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
             <option value="rating">Sort: Rating</option>
             <option value="experience">Sort: Experience</option>
             <option value="fee">Sort: Fee (low to high)</option>
@@ -316,7 +316,7 @@ export default function DoctorAppointment() {
 
       <section className="grid md:grid-cols-3 gap-4">
         {filtered.map((doc) => (
-          <div key={doc.id} className="flex items-center gap-4 p-4 border rounded-lg shadow-sm">
+          <div key={doc.id} className="flex items-center gap-4 p-4 border border-primary rounded-lg shadow-sm">
             <img src={doc.avatar} alt={doc.name} className="w-20 h-20 rounded-full object-cover" />
             <div className="flex-1">
               <div className="flex items-center justify-between">
@@ -334,13 +334,13 @@ export default function DoctorAppointment() {
                 <div className="text-sm text-gray-700">Fee: ৳{doc.fee}</div>
                 <div className="flex items-center gap-2">
                   <button
-                    className="px-3 py-1 bg-blue-600 text-white rounded-md text-sm hover:bg-blue-700"
+                    className="px-3 py-1 bg-primary text-white rounded-md text-sm hover:bg-secondary transition-all duration-200"
                     onClick={() => openBooking(doc)}
                   >
                     Book
                   </button>
                   <button
-                    className="px-3 py-1 border rounded-md text-sm"
+                    className="px-3 py-1 border border-primary rounded-md text-sm hover:bg-primary hover:text-base-100 transition-all duration-200"
                     onClick={() => window.alert(`Visiting details for ${doc.name}:\nLocation: ${doc.location}\nAvailable slots: ${doc.availableSlots.join(", ")}`)}
                   >
                     View
@@ -355,17 +355,17 @@ export default function DoctorAppointment() {
       {/* Booking Modal */}
       {showModal && selectedDoctor && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
-          <div className="bg-primary rounded-lg w-full max-w-xl p-5">
+          <div className="bg-base-200 rounded-lg w-full max-w-xl p-5">
             <div className="flex items-center justify-between mb-4">
               <h3 className="text-lg font-semibold">Book Appointment — {selectedDoctor.name}</h3>
-              <button className="text-gray-600" onClick={() => setShowModal(false)}>Close</button>
+              <button className="" onClick={() => setShowModal(false)}>Close</button>
             </div>
             <form onSubmit={handleBookSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div>
                   <label className="block text-sm">Patient name</label>
                   <input
-                    className="w-full p-2 border rounded"
+                    className="w-full p-2 border rounded border-primary focus:outline-none focus:ring-2 focus:ring-primary"
                     value={bookingForm.patientName}
                     onChange={(e) => setBookingForm((s) => ({ ...s, patientName: e.target.value }))}
                     required
@@ -374,7 +374,7 @@ export default function DoctorAppointment() {
                 <div>
                   <label className="block text-sm">Phone</label>
                   <input
-                    className="w-full p-2 border rounded"
+                    className="w-full p-2 border rounded border-primary focus:outline-none focus:ring-2 focus:ring-primary"
                     value={bookingForm.phone}
                     onChange={(e) => setBookingForm((s) => ({ ...s, phone: e.target.value }))}
                     required
@@ -383,7 +383,7 @@ export default function DoctorAppointment() {
                 <div className="md:col-span-2">
                   <label className="block text-sm">Select slot</label>
                   <select
-                    className="w-full p-2 border rounded"
+                    className="w-full p-2 border rounded border-primary focus:outline-none focus:ring-2 focus:ring-primary"
                     value={bookingForm.slot}
                     onChange={(e) => setBookingForm((s) => ({ ...s, slot: e.target.value }))}
                     required
@@ -396,8 +396,8 @@ export default function DoctorAppointment() {
               </div>
 
               <div className="mt-4 flex justify-end gap-2">
-                <button type="button" className="px-4 py-2 border rounded" onClick={() => setShowModal(false)}>Cancel</button>
-                <button type="submit" className="px-4 py-2 bg-green-600 text-white rounded">Confirm</button>
+                <button type="button" className="px-4 py-2 border rounded hover:bg-primary hover:border-primary transition-colors duration-300 hover:text-base-100" onClick={() => setShowModal(false)}>Cancel</button>
+                <button type="submit" className="px-4 py-2 bg-primary text-primary-content border border-primary rounded hover:bg-base-100 hover:text-secondary transition-colors duration-300 hoverborder-secondary">Confirm</button>
               </div>
             </form>
           </div>
@@ -415,9 +415,9 @@ export default function DoctorAppointment() {
               <div key={b.id} className="p-3 border rounded flex items-center justify-between">
                 <div>
                   <div className="font-medium">{b.doctorName}</div>
-                  <div className="text-sm text-gray-600">{b.patientName} • {b.slot}</div>
+                  <div className="text-sm">{b.patientName} • {b.slot}</div>
                 </div>
-                <div className="text-sm text-gray-700">Phone: {b.phone}</div>
+                <div className="text-sm">Phone: {b.phone}</div>
               </div>
             ))}
           </div>

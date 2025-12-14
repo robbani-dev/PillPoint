@@ -1,7 +1,7 @@
 import { sendPasswordResetEmail } from "firebase/auth";
 import { auth } from "../../../firebase/firebase.config";
 import Swal from "sweetalert2";
-import { useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router";
 
 const ForgotPassword = () => {
   const navigate = useNavigate();
@@ -38,13 +38,21 @@ const ForgotPassword = () => {
           <label className="label">Type Your Email</label>
           <input
             type="email"
-            className="input"
+            className="input i-s"
             placeholder="Email"
             name="email"
           />
-          <button type="submit" className="btn btn-neutral mt-4">
+          <button type="submit" className="btn btn-primary mt-4">
             Next
           </button>
+          <div className="mt-4">
+            <p>
+              Already Have An Account?{" "}
+              <Link className="link link-hover text-primary" to="/login">
+                Login
+              </Link>
+            </p>
+          </div>
         </form>
       </div>
     </div>

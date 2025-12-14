@@ -60,7 +60,7 @@ export default function SalesChart() {
 
     return (
         <div className="w-full mt-10 md:mt-20 max-w-5xl mx-auto shadow-lg rounded-2xl p-6">
-            <h2 className="text-2xl font-bold mb-6 text-center text-indigo-700">
+            <h2 className="text-2xl font-bold mb-6 text-center text-secondary">
                 💊 PillPoint Sales Overview
             </h2>
 

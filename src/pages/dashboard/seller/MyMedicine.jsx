@@ -274,7 +274,7 @@ const MyMedicine = () => {
     <div>
       <div className="p-4">
         <button
-          className="btn w-full btn-outline"
+          className="btn w-full btn-primary"
           onClick={() => document.getElementById("my_modal_3")?.showModal()}
         >
           Add A Medicine
@@ -327,7 +327,7 @@ const MyMedicine = () => {
               <input
                 {...register("itemName", { required: true })}
                 type="text"
-                className="input"
+                className="input i-s"
                 placeholder="Item Name"
               />
             </fieldset>
@@ -339,7 +339,7 @@ const MyMedicine = () => {
               <input
                 {...register("itemGenericName", { required: true })}
                 type="text"
-                className="input"
+                className="input i-s"
                 placeholder="Item Generic Name"
               />
             </fieldset>
@@ -349,7 +349,7 @@ const MyMedicine = () => {
               <input
                 {...register("description", { required: true })}
                 type="text"
-                className="input"
+                className="input i-s"
                 placeholder="Description"
               />
             </fieldset>
@@ -362,7 +362,7 @@ const MyMedicine = () => {
                 {...register("imageFile", { required: true })}
                 type="file"
                 accept="image/*"
-                className="file-input"
+                className="file-input i-s"
               />
             </fieldset>
 
@@ -371,7 +371,7 @@ const MyMedicine = () => {
               <select
                 {...register("category", { required: true })}
                 defaultValue="Pick a Category"
-                className="select"
+                className="select i-s"
               >
                 <option disabled>Pick a Category</option>
                 {categories &&
@@ -386,7 +386,7 @@ const MyMedicine = () => {
               <select
                 {...register("company", { required: true })}
                 defaultValue="Pick a Company"
-                className="select"
+                className="select i-s"
               >
                 <option disabled>Pick a Company</option>
                 {company &&
@@ -398,7 +398,7 @@ const MyMedicine = () => {
 
             <fieldset className="fieldset">
               <legend className="fieldset-legend">Mass Unit:</legend>
-              <div className="flex items-center space-x-2 border rounded-md px-3 py-2">
+              <div className="flex items-center space-x-2 border rounded-md px-3 py-2 i-s">
                 <input
                   {...register("mass", { valueAsNumber: true, required: true })}
                   type="number"
@@ -423,7 +423,7 @@ const MyMedicine = () => {
               <input
                 {...register("perUnitPrice", { required: true })}
                 type="text"
-                className="input"
+                className="input i-s"
                 placeholder="Price Per Unit"
               />
             </fieldset>
@@ -433,7 +433,7 @@ const MyMedicine = () => {
               <input
                 {...register("quantity", { required: true })}
                 type="number"
-                className="input"
+                className="input i-s"
                 placeholder="Quantity"
               />
             </fieldset>
@@ -443,12 +443,12 @@ const MyMedicine = () => {
               <input
                 {...register("discount", { required: true })}
                 type="number"
-                className="input"
+                className="input  i-s"
                 placeholder="Discount"
               />
             </fieldset>
 
-            <button className="btn mt-3 shadow w-full md:col-span-2">
+            <button className="btn mt-3 btn-primary shadow w-full md:col-span-2">
               Add Medicine
             </button>
           </form>

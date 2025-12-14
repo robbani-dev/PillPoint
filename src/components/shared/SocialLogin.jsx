@@ -48,7 +48,7 @@ const SocialLogin = () => {
   };
 
   return (
-    <div className="border-t-2 pt-4 mx-6">
+    <div className="border-t-2 border-primary pt-4 mx-6">
       <div className="text-center mb-6">
         <button onClick={handleGoogleLogin} className="btn border-[#e5e5e5]">
           <svg

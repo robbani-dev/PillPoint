@@ -84,7 +84,7 @@ const ProfileSettings = () => {
       <Helmet>
         <title>PillPoint | Update Profile</title>
       </Helmet>
-      <div className="card w-80 shadow-xl items-center relative">
+      <div className="card w-80 shadow-xl items-center relative p-4">
         {" "}
         {loading && (
           <div className="absolute inset-0 flex items-center justify-center z-50 rounded-xl">
@@ -104,7 +104,7 @@ const ProfileSettings = () => {
                 maxLength: 25,
               })}
               type="text"
-              className="input"
+              className="input i-s"
               placeholder="Username"
               defaultValue={user.displayName}
             />
@@ -125,7 +125,7 @@ const ProfileSettings = () => {
               {...register("image", { required: true })}
               type="file"
               accept="image/*"
-              className="file-input"
+              className="file-input i-s"
             />
           </fieldset>
 

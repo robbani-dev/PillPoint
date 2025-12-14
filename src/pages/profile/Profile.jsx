@@ -23,11 +23,11 @@ const Profile = () => {
 
         <div className="card-body items-center text-center">
           <h2 className="card-title text-lg font-bold">{user?.displayName}</h2>
-          <p className="text-sm text-gray-500">{user?.email}</p>
-          <p className="text-sm text-gray-500">User Type: {userType}</p>
+          <p className="text-sm">{user?.email}</p>
+          <p className="text-sm">User Type: {userType}</p>
 
           <div className="card-actions mt-4">
-            <Link to="/dashboard/settings" className="btn bg-blue-500 shadow border-none">
+            <Link to="/dashboard/settings" className="btn bg-primary text-primary-content shadow border-none">
               Update
             </Link>
           </div>

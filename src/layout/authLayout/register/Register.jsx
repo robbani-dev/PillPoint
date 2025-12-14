@@ -98,7 +98,7 @@ const Register = () => {
 
       {/* Card content (form + social login) */}
       <div className="card-body opacity-100">
-        <form className="fieldset" onSubmit={handleSubmit(userRegistration)}>
+        <form className="fieldset mb-2" onSubmit={handleSubmit(userRegistration)}>
           <label className="label">Username</label>
           <input
             {...register("username", {
@@ -107,7 +107,7 @@ const Register = () => {
               maxLength: 25,
             })}
             type="text"
-            className="input"
+            className="input i-s"
             placeholder="Username"
           />
           {errors.username?.type === "required" && (
@@ -124,7 +124,7 @@ const Register = () => {
           <input
             {...register("email", { required: true })}
             type="email"
-            className="input"
+            className="input i-s"
             placeholder="Email"
           />
           {errors.email?.type === "required" && (
@@ -136,7 +136,7 @@ const Register = () => {
             <input
               type={showPass ? "text" : "password"}
               placeholder="Password"
-              className="input"
+              className="input i-s"
               {...register("password", {
                 required: "Password is required",
                 minLength: {
@@ -150,7 +150,7 @@ const Register = () => {
               })}
             />
             <div className="absolute right-5 top-1/2 text-lg z-10">
-              <button type="button" onClick={showPassword}>
+              <button type="button" onClick={showPassword} className="text-primary">
                 {showPass ? <FaRegEyeSlash /> : <FaRegEye />}
               </button>
             </div>
@@ -163,7 +163,7 @@ const Register = () => {
           <select
             {...register("userType")}
             defaultValue="Customer"
-            className="select"
+            className="select i-s"
           >
             <option value="Customer">Customer</option>
             <option value="Seller">Seller</option>
@@ -175,7 +175,7 @@ const Register = () => {
               {...register("image", { required: true })}
               type="file"
               accept="image/*"
-              className="file-input"
+              className="file-input i-s"
             />
             <label className="label">Max size 2MB</label>
           </fieldset>
@@ -183,17 +183,17 @@ const Register = () => {
           <div>
             <p>
               Already Have An Account?{" "}
-              <Link className="link link-hover text-blue-500" to="/login">
+              <Link className="link link-hover text-primary" to="/login">
                 Login
               </Link>
             </p>
           </div>
-          <div className="border p-1 rounded-sm">
-            <p className="italic text-blue-500">Login Email: admin@pillpoint.com</p>
-            <p className="italic text-blue-500">Login password: Admin2025</p>
-          </div>
+          {/* <div className="border p-1 rounded-sm">
+            <p className="italic text-primary">Login Email: admin@pillpoint.com</p>
+            <p className="italic text-primary">Login password: Admin2025</p>
+          </div> */}
 
-          <button className="btn btn-neutral mt-4">Register</button>
+          <button className="btn btn-primary mt-4">Register</button>
         </form>
 
         <SocialLogin />
