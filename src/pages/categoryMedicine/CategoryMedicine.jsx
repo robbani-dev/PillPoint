@@ -74,7 +74,7 @@ const CategoryMedicine = () => {
   return (
     <>
       {categoryMedicines?.length >= 1 ? (
-        <div className="overflow-x-auto contain">
+        <div className="overflow-x-auto c-container b-p">
           <table className="table">
             <thead>
               <tr>
@@ -193,13 +193,13 @@ const CategoryMedicine = () => {
               <input
                 type="number"
                 id="quantity"
-                className="input"
+                className="input i-s"
                 placeholder="Quantity"
                 name="quantity"
                 required
               />
             </fieldset>
-            <button className="btn shadow my-3">Add to Cart</button>
+            <button className="btn shadow my-3 btn-primary">Add to Cart</button>
           </form>
         </div>
       </dialog>
