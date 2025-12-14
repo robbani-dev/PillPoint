@@ -85,11 +85,11 @@ const Shop = ({ fromHome }) => {
 
   return (
 
-    <div className="contain relative">
+    <div className={`c-container relative bg-base-200 ${!fromHome ? "pb-10" : ""}`}>
       <Helmet>
         <title>PillPoint | Shop</title>
       </Helmet>
-      <h1 className="titles">
+      <h1 className="title-section">
         Shop Medicines
       </h1>
 
@@ -105,7 +105,7 @@ const Shop = ({ fromHome }) => {
           <select
             value={sortBy}
             onChange={(e) => setSortBy(e.target.value)}
-            className="px-3 py-1 rounded  border bg-blue-500"
+            className="px-3 py-1 rounded  border"
           >
             <option value="">Sort By</option>
             <option value="priceAsc">Price: Low to High</option>
@@ -170,7 +170,7 @@ const Shop = ({ fromHome }) => {
         !fromHome && (
           <div className="flex justify-center items-center mt-6 gap-2">
             <button
-              className="px-3 py-1 bg-base-200 rounded disabled:opacity-50"
+              className="px-3 py-1 bg-primary text-primary-content rounded disabled:opacity-50"
               disabled={currentPage === 1}
               onClick={() => setCurrentPage((prev) => prev - 1)}
             >
@@ -182,7 +182,7 @@ const Shop = ({ fromHome }) => {
                 key={num + 1}
                 onClick={() => setCurrentPage(num + 1)}
                 className={`px-3 py-1 rounded ${currentPage === num + 1
-                  ? "bg-blue-500 text-white"
+                  ? " bg-primary text-white"
                   : "bg-base-200"
                   }`}
               >
@@ -191,7 +191,7 @@ const Shop = ({ fromHome }) => {
             ))}
 
             <button
-              className="px-3 py-1 bg-base-200 rounded disabled:opacity-50"
+              className="px-3 py-1 bg-primary text-primary-content rounded disabled:opacity-50"
               disabled={currentPage === totalPages}
               onClick={() => setCurrentPage((prev) => prev + 1)}
             >

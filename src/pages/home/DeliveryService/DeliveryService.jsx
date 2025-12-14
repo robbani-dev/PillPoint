@@ -42,8 +42,8 @@ export default function DeliveryService() {
   };
 
   return (
-    <div className="contain ">
-      <h2 className="titles">Delivery Service</h2>
+    <div className="c-container">
+      <h2 className="title-section">Delivery Service</h2>
 
       <form
         onSubmit={handleSubmit}
@@ -58,7 +58,7 @@ export default function DeliveryService() {
             value={formData.senderName}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
           />
         </div>
 
@@ -71,7 +71,7 @@ export default function DeliveryService() {
             value={formData.senderPhone}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
           />
         </div>
 
@@ -84,7 +84,7 @@ export default function DeliveryService() {
             onChange={handleChange}
             required
             rows="2"
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
           />
         </div>
 
@@ -97,7 +97,7 @@ export default function DeliveryService() {
             value={formData.recipientName}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
           />
         </div>
 
@@ -110,7 +110,7 @@ export default function DeliveryService() {
             value={formData.recipientPhone}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
           />
         </div>
 
@@ -123,7 +123,7 @@ export default function DeliveryService() {
             onChange={handleChange}
             required
             rows="2"
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
           />
         </div>
 
@@ -136,7 +136,7 @@ export default function DeliveryService() {
             onChange={handleChange}
             required
             rows="3"
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
           />
         </div>
 
@@ -151,7 +151,7 @@ export default function DeliveryService() {
             value={formData.deliveryDate}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
           />
         </div>
 
@@ -159,7 +159,7 @@ export default function DeliveryService() {
         <div className="lg:col-span-2">
           <button
             type="submit"
-            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg transition duration-200"
+            className="w-full bg-primary hover:bg-secondary text-white font-semibold py-2 rounded-lg transition duration-200"
           >
             Submit Delivery Request
           </button>

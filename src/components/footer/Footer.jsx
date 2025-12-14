@@ -3,8 +3,8 @@ import Logo from "../shared/logo";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-horizontal bg-base-200 footer-center pt contain border-t">
-      <nav className="flex justify-between w-full">
+    <footer className="bg-primary text-primary-content footer footer-horizontal footer-center">
+      <nav className="c-container flex justify-between w-full">
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <Links />

@@ -13,9 +13,9 @@ export default function DiscountSlider() {
     (product) => product.discount && product.discount > 0
   );
 
-  return (<div className="contain bg-base-200">
+  return (<div className="c-container bg-base-200">
     <div className="discount-slider-container">
-      <h1 className="titles">Discount Products</h1>
+      <h1 className="title-section">Discount Products</h1>
       <Swiper
         slidesPerView={4}
         spaceBetween={25}
@@ -37,12 +37,12 @@ export default function DiscountSlider() {
           return (
             <SwiperSlide key={item._id}>
               <Link to={`/product/${item._id}`}>
-                <div className="card bg-base-200 my-10 shadow-sm hover:shadow-lg transition duration-300">
+                <div className="card bg-base-100 my-10 shadow-sm hover:shadow-lg transition duration-300">
                   <figure>
                     <img
                       src={item.imgUrl || "https://via.placeholder.com/200"}
                       alt="Shoes"
-                      className="h-48 p-2 rounded-2xl"
+                      className="h-48 p-2 rounded-2xl hover:scale-105 transition-transform duration-300"
                     />
                   </figure>
                   <div className="card-body">
@@ -50,14 +50,14 @@ export default function DiscountSlider() {
                       {item.itemName.length > 15
                         ? item.itemName.slice(0, 15) + "..."
                         : item.itemName}
-                      <div className="badge badge-secondary">
+                      <div className="badge badge-primary">
                         {item.discount}% OFF
                       </div>
                     </h2>
                     <div className="card-actions justify-end">
                       <span className="old-price"><del>Tk {price.toFixed(2)}</del></span>
                       <span className="new-price">
-                        <ins style={{ textDecoration: "none" }} className="text-blue-500">Tk {discountedPrice.toFixed(2)}</ins>
+                        <ins style={{ textDecoration: "none" }} className="text-primary">Tk {discountedPrice.toFixed(2)}</ins>
                       </span>
                     </div>
                   </div>

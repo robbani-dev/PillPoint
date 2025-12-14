@@ -9,7 +9,7 @@ const Navbar = ({ dashboard }) => {
   const navigate = useNavigate();
   // console.log(userFromMongo);
   return (
-    <div className="navbar bg-base-200 opacity-[95%] shadow-sm md:px-[6vw]">
+    <div className="navbar bg-primary opacity-[95%] shadow-sm md:px-[6vw] text-primary-content">
       <div className="navbar-start">
         <div className={`dropdown ${dashboard && "hidden"}`}>
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

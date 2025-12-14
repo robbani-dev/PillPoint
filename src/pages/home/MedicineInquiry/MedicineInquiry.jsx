@@ -34,9 +34,9 @@ export default function MedicineInquiry() {
     });
   };
 
-  return (<div className="contain">
+  return (<div className="c-container">
     <div className="">
-      <h2 className="titles">
+      <h2 className="title-section">
         Medicine Inquiry
       </h2>
 
@@ -53,7 +53,7 @@ export default function MedicineInquiry() {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
           />
         </div>
 
@@ -66,7 +66,7 @@ export default function MedicineInquiry() {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
           />
         </div>
 
@@ -78,7 +78,7 @@ export default function MedicineInquiry() {
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
           />
         </div>
 
@@ -91,7 +91,7 @@ export default function MedicineInquiry() {
             value={formData.medicineName}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
           />
         </div>
 
@@ -104,7 +104,7 @@ export default function MedicineInquiry() {
             onChange={handleChange}
             required
             rows="4"
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
           />
         </div>
 
@@ -112,7 +112,7 @@ export default function MedicineInquiry() {
         <div className="lg:col-span-2">
           <button
             type="submit"
-            className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-2 rounded-lg transition duration-200"
+            className="w-full bg-primary hover:bg-secondary text-white font-semibold py-2 rounded-lg transition duration-200"
           >
             Submit Inquiry
           </button>

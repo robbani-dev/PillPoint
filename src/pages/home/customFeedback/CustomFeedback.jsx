@@ -82,8 +82,8 @@ const feedbacks = [
 
 const CustomFeedback = () => {
   return (
-    <section className=" contain">
-      <h2 className="titles">Customer Feedback</h2>
+    <section className="c-container bg-base-200">
+      <h2 className="title-section">Customer Feedback</h2>
 
       <Swiper
         slidesPerView={3}

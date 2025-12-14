@@ -155,7 +155,7 @@ const ProductPage = () => {
     //   </div>
     // </div>
     <div>
-      <div className="contain grid md:grid-cols-2 gap-6">
+      <div className="c-container grid md:grid-cols-2 gap-6">
         {
           loading && <FormLoading />
         }
@@ -163,7 +163,7 @@ const ProductPage = () => {
           <img
             src={product.imgUrl || "https://via.placeholder.com/250"}
             alt={product.itemName}
-            className=" object-cover rounded-sm shadow-md w-full md:h-[400px]"
+            className=" object-cover rounded-sm shadow-md w-full md:h-[400px] hover:scale-98 transition-transform duration-300"
           />
         </div>
         <div>
@@ -187,7 +187,7 @@ const ProductPage = () => {
             <span className="line-through text-gray-400 text-lg">
               Tk {price.toFixed(2)}
             </span>
-            <span className="text-red-600 font-bold text-2xl">
+            <span className="text-primary font-bold text-2xl">
               Tk {discountedPrice.toFixed(2)}
             </span>
           </div>
@@ -207,7 +207,7 @@ const ProductPage = () => {
               max={product.stock || 100}
               value={quantity}
               onChange={(e) => setQuantity(Number(e.target.value))}
-              className="w-20 px-3 py-1 border  rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-20 px-3 py-1 border  rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
             />
           </div>
 
@@ -217,7 +217,7 @@ const ProductPage = () => {
             disabled={product.stock === 0}
             className={`w-full py-2 rounded-lg font-semibold text-white transition-colors ${product.stock === 0
               ? "bg-gray-400 cursor-not-allowed"
-              : "bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
+              : "bg-gradient-to-r from-primary to-primary/75 hover:from-primary/75 hover:to-primary transition-colors duration-500"
               }`}
           >
             {product.stock === 0 ? "Out of Stock" : "Add to Cart"}

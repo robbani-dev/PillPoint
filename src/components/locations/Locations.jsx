@@ -123,21 +123,21 @@ export default function Locations() {
   });
 
   return (
-    <section className="contain p-4">
+    <section className="c-container b-p">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="titles">PillPoint branches</h2>
+        <h2 className="title-section">PillPoint branches</h2>
         <input
           aria-label="Search locations"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search by name, city or address..."
-          className="border rounded-md px-3 py-2 w-64 focus:outline-none focus:ring"
+          className="border border-primary rounded-md px-3 py-2 w-64 focus:outline-none focus:ring-2 focus:ring-primary"
         />
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
         {filtered.map((loc) => (
-          <div key={loc.id} className=" rounded-2xl border shadow p-4">
+          <div key={loc.id} className=" rounded-2xl border border-primary shadow p-4">
             <h3 className="text-lg font-medium">{loc.name}</h3>
             <p className="text-sm ">{loc.city} — {loc.address}</p>
 
@@ -151,7 +151,7 @@ export default function Locations() {
                 target="_blank"
                 rel="noreferrer"
                 href={`https://www.google.com/maps/search/?api=1&query=${loc.lat},${loc.lng}`}
-                className="btn bg-blue-400 btn-sm px-3 py-1 rounded-md border"
+                className="btn bg-primary text-primary-content btn-sm px-3 py-1 rounded-md border"
               >
                 View on Map
               </a>
