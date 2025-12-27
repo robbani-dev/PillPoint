@@ -156,7 +156,7 @@ const ProductPage = () => {
     //   </div>
     // </div>
     <div>
-      <div className="c-container grid md:grid-cols-2 gap-6">
+      <div className="container grid md:grid-cols-2 gap-6">
         {
           loading && <FormLoading />
         }

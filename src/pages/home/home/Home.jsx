@@ -7,7 +7,6 @@ import DiscountProducts from "../DiscountProducts/DiscountProducts";
 import MedicineInquiry from "../MedicineInquiry/MedicineInquiry";
 
 const Home = () => {
-
   const fromHome = true;
 
   return (

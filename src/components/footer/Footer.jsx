@@ -3,13 +3,8 @@ import Logo from "../shared/logo";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-content footer footer-horizontal footer-center">
-      <nav className="c-container flex justify-between w-full">
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            <Links />
-          </ul>
-        </div>
+    <footer className="bg-primary text-primary-content footer footer-horizontal footer-center py-16">
+      <nav className="container flex justify-between w-full">
         <div className="grid grid-flow-col gap-4">
           <a href="https://x.com/?lang=en" target="_blank">
             <svg
@@ -45,14 +40,22 @@ const Footer = () => {
             </svg>
           </a>
         </div>
-        <div className="">
+
+        <div>
           <Logo />
+        </div>
+
+        <div className="navbar-center hidden sm:flex">
+          <ul className="menu grid grid-cols-2 space-x-5 px-1">
+            <Links />
+          </ul>
         </div>
       </nav>
 
       <aside>
         <p>
-          Copyright © {new Date().getFullYear()} - All right reserved by PillPoint Ltd
+          Copyright © {new Date().getFullYear()} - All right reserved by
+          PillPoint Ltd
         </p>
       </aside>
     </footer>

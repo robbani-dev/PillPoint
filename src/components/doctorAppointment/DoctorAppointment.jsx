@@ -18,7 +18,11 @@ export default function DoctorAppointment() {
       location: "Dhaka Central Hospital",
       fee: 1200,
       avatar: "https://i.pravatar.cc/100?img=11",
-      availableSlots: ["2025-11-03 09:00", "2025-11-03 11:00", "2025-11-04 14:00"],
+      availableSlots: [
+        "2025-11-03 09:00",
+        "2025-11-03 11:00",
+        "2025-11-04 14:00",
+      ],
     },
     {
       id: 2,
@@ -29,7 +33,11 @@ export default function DoctorAppointment() {
       location: "Garden Clinic",
       fee: 600,
       avatar: "https://i.pravatar.cc/100?img=12",
-      availableSlots: ["2025-11-02 10:00", "2025-11-02 15:00", "2025-11-05 09:30"],
+      availableSlots: [
+        "2025-11-02 10:00",
+        "2025-11-02 15:00",
+        "2025-11-05 09:30",
+      ],
     },
     {
       id: 3,
@@ -40,7 +48,11 @@ export default function DoctorAppointment() {
       location: "Kids Care Hospital",
       fee: 700,
       avatar: "https://i.pravatar.cc/100?img=13",
-      availableSlots: ["2025-11-06 09:00", "2025-11-06 10:30", "2025-11-07 13:00"],
+      availableSlots: [
+        "2025-11-06 09:00",
+        "2025-11-06 10:30",
+        "2025-11-07 13:00",
+      ],
     },
     {
       id: 4,
@@ -51,7 +63,11 @@ export default function DoctorAppointment() {
       location: "Bone & Joint Center",
       fee: 1500,
       avatar: "https://i.pravatar.cc/100?img=14",
-      availableSlots: ["2025-11-03 08:30", "2025-11-04 12:00", "2025-11-07 16:00"],
+      availableSlots: [
+        "2025-11-03 08:30",
+        "2025-11-04 12:00",
+        "2025-11-07 16:00",
+      ],
     },
     {
       id: 5,
@@ -62,7 +78,11 @@ export default function DoctorAppointment() {
       location: "SkinCare Clinic",
       fee: 800,
       avatar: "https://i.pravatar.cc/100?img=15",
-      availableSlots: ["2025-11-05 11:00", "2025-11-05 14:00", "2025-11-08 10:00"],
+      availableSlots: [
+        "2025-11-05 11:00",
+        "2025-11-05 14:00",
+        "2025-11-08 10:00",
+      ],
     },
     {
       id: 6,
@@ -73,7 +93,11 @@ export default function DoctorAppointment() {
       location: "City ENT Center",
       fee: 700,
       avatar: "https://i.pravatar.cc/100?img=16",
-      availableSlots: ["2025-11-02 09:30", "2025-11-03 13:00", "2025-11-06 15:30"],
+      availableSlots: [
+        "2025-11-02 09:30",
+        "2025-11-03 13:00",
+        "2025-11-06 15:30",
+      ],
     },
     {
       id: 7,
@@ -84,7 +108,11 @@ export default function DoctorAppointment() {
       location: "Mother & Child Hospital",
       fee: 1300,
       avatar: "https://i.pravatar.cc/100?img=17",
-      availableSlots: ["2025-11-04 09:00", "2025-11-04 11:30", "2025-11-07 14:30"],
+      availableSlots: [
+        "2025-11-04 09:00",
+        "2025-11-04 11:30",
+        "2025-11-07 14:30",
+      ],
     },
     {
       id: 8,
@@ -95,7 +123,11 @@ export default function DoctorAppointment() {
       location: "Brain Care Institute",
       fee: 2000,
       avatar: "https://i.pravatar.cc/100?img=18",
-      availableSlots: ["2025-11-09 10:00", "2025-11-10 13:00", "2025-11-12 09:00"],
+      availableSlots: [
+        "2025-11-09 10:00",
+        "2025-11-10 13:00",
+        "2025-11-12 09:00",
+      ],
     },
     {
       id: 9,
@@ -106,7 +138,11 @@ export default function DoctorAppointment() {
       location: "Eye Care Center",
       fee: 900,
       avatar: "https://i.pravatar.cc/100?img=19",
-      availableSlots: ["2025-11-02 14:00", "2025-11-03 10:00", "2025-11-06 11:00"],
+      availableSlots: [
+        "2025-11-02 14:00",
+        "2025-11-03 10:00",
+        "2025-11-06 11:00",
+      ],
     },
     {
       id: 10,
@@ -117,7 +153,11 @@ export default function DoctorAppointment() {
       location: "Hormone Clinic",
       fee: 1400,
       avatar: "https://i.pravatar.cc/100?img=20",
-      availableSlots: ["2025-11-05 09:00", "2025-11-05 13:00", "2025-11-09 15:00"],
+      availableSlots: [
+        "2025-11-05 09:00",
+        "2025-11-05 13:00",
+        "2025-11-09 15:00",
+      ],
     },
     {
       id: 11,
@@ -128,7 +168,11 @@ export default function DoctorAppointment() {
       location: "MindWell Center",
       fee: 1100,
       avatar: "https://i.pravatar.cc/100?img=21",
-      availableSlots: ["2025-11-03 10:00", "2025-11-06 16:00", "2025-11-08 09:30"],
+      availableSlots: [
+        "2025-11-03 10:00",
+        "2025-11-06 16:00",
+        "2025-11-08 09:30",
+      ],
     },
     {
       id: 12,
@@ -139,7 +183,11 @@ export default function DoctorAppointment() {
       location: "Kidney Care Hospital",
       fee: 1700,
       avatar: "https://i.pravatar.cc/100?img=22",
-      availableSlots: ["2025-11-11 09:00", "2025-11-11 11:00", "2025-11-13 14:00"],
+      availableSlots: [
+        "2025-11-11 09:00",
+        "2025-11-11 11:00",
+        "2025-11-13 14:00",
+      ],
     },
     {
       id: 13,
@@ -150,7 +198,11 @@ export default function DoctorAppointment() {
       location: "Cancer Care Center",
       fee: 2500,
       avatar: "https://i.pravatar.cc/100?img=23",
-      availableSlots: ["2025-11-15 10:00", "2025-11-16 10:00", "2025-11-18 13:00"],
+      availableSlots: [
+        "2025-11-15 10:00",
+        "2025-11-16 10:00",
+        "2025-11-18 13:00",
+      ],
     },
     {
       id: 14,
@@ -161,7 +213,11 @@ export default function DoctorAppointment() {
       location: "Wellness Hub",
       fee: 800,
       avatar: "https://i.pravatar.cc/100?img=24",
-      availableSlots: ["2025-11-02 12:00", "2025-11-04 15:00", "2025-11-09 09:00"],
+      availableSlots: [
+        "2025-11-02 12:00",
+        "2025-11-04 15:00",
+        "2025-11-09 09:00",
+      ],
     },
     {
       id: 15,
@@ -172,7 +228,11 @@ export default function DoctorAppointment() {
       location: "UroCare Clinic",
       fee: 1300,
       avatar: "https://i.pravatar.cc/100?img=25",
-      availableSlots: ["2025-11-07 10:00", "2025-11-08 11:30", "2025-11-10 14:30"],
+      availableSlots: [
+        "2025-11-07 10:00",
+        "2025-11-08 11:30",
+        "2025-11-10 14:30",
+      ],
     },
     {
       id: 16,
@@ -183,7 +243,11 @@ export default function DoctorAppointment() {
       location: "Smile Dental Clinic",
       fee: 500,
       avatar: "https://i.pravatar.cc/100?img=26",
-      availableSlots: ["2025-11-03 09:00", "2025-11-03 10:30", "2025-11-05 12:00"],
+      availableSlots: [
+        "2025-11-03 09:00",
+        "2025-11-03 10:30",
+        "2025-11-05 12:00",
+      ],
     },
     {
       id: 17,
@@ -194,7 +258,11 @@ export default function DoctorAppointment() {
       location: "Digestive Health Center",
       fee: 1500,
       avatar: "https://i.pravatar.cc/100?img=27",
-      availableSlots: ["2025-11-04 09:30", "2025-11-06 11:00", "2025-11-07 13:30"],
+      availableSlots: [
+        "2025-11-04 09:30",
+        "2025-11-06 11:00",
+        "2025-11-07 13:30",
+      ],
     },
     {
       id: 18,
@@ -205,7 +273,11 @@ export default function DoctorAppointment() {
       location: "Rehab Center",
       fee: 600,
       avatar: "https://i.pravatar.cc/100?img=28",
-      availableSlots: ["2025-11-02 09:00", "2025-11-05 10:00", "2025-11-09 15:00"],
+      availableSlots: [
+        "2025-11-02 09:00",
+        "2025-11-05 10:00",
+        "2025-11-09 15:00",
+      ],
     },
     {
       id: 19,
@@ -216,7 +288,11 @@ export default function DoctorAppointment() {
       location: "Lung Care Clinic",
       fee: 1400,
       avatar: "https://i.pravatar.cc/100?img=29",
-      availableSlots: ["2025-11-06 09:00", "2025-11-07 11:00", "2025-11-10 10:00"],
+      availableSlots: [
+        "2025-11-06 09:00",
+        "2025-11-07 11:00",
+        "2025-11-10 10:00",
+      ],
     },
     {
       id: 20,
@@ -227,7 +303,11 @@ export default function DoctorAppointment() {
       location: "Joint Care Center",
       fee: 1200,
       avatar: "https://i.pravatar.cc/100?img=30",
-      availableSlots: ["2025-11-08 09:00", "2025-11-10 14:00", "2025-11-12 09:30"],
+      availableSlots: [
+        "2025-11-08 09:00",
+        "2025-11-10 14:00",
+        "2025-11-12 09:30",
+      ],
     },
   ];
 
@@ -237,15 +317,25 @@ export default function DoctorAppointment() {
   const [sortBy, setSortBy] = useState("rating");
   const [selectedDoctor, setSelectedDoctor] = useState(null);
   const [showModal, setShowModal] = useState(false);
-  const [bookingForm, setBookingForm] = useState({ patientName: "", phone: "", slot: "" });
+  const [bookingForm, setBookingForm] = useState({
+    patientName: "",
+    phone: "",
+    slot: "",
+  });
   const [bookings, setBookings] = useState([]);
 
-  const specialties = ["All", ...Array.from(new Set(doctors.map((d) => d.specialty)))];
+  const specialties = [
+    "All",
+    ...Array.from(new Set(doctors.map((d) => d.specialty))),
+  ];
 
   const filtered = doctors
     .filter((d) => (specialty === "All" ? true : d.specialty === specialty))
     .filter((d) =>
-      [d.name, d.specialty, d.location].join(" ").toLowerCase().includes(query.toLowerCase())
+      [d.name, d.specialty, d.location]
+        .join(" ")
+        .toLowerCase()
+        .includes(query.toLowerCase())
     )
     .sort((a, b) => {
       if (sortBy === "rating") return b.rating - a.rating;
@@ -256,15 +346,22 @@ export default function DoctorAppointment() {
 
   function openBooking(doctor) {
     setSelectedDoctor(doctor);
-    setBookingForm({ patientName: "", phone: "", slot: doctor.availableSlots[0] || "" });
+    setBookingForm({
+      patientName: "",
+      phone: "",
+      slot: doctor.availableSlots[0] || "",
+    });
     setShowModal(true);
   }
-
 
   function handleBookSubmit(e) {
     e.preventDefault();
     // basic validation
-    if (!bookingForm.patientName.trim() || !bookingForm.phone.trim() || !bookingForm.slot) {
+    if (
+      !bookingForm.patientName.trim() ||
+      !bookingForm.phone.trim() ||
+      !bookingForm.slot
+    ) {
       alert("Please fill all booking fields.");
       return;
     }
@@ -279,8 +376,6 @@ export default function DoctorAppointment() {
       slot: bookingForm.slot,
     };
 
-
-
     setBookings((s) => [newBooking, ...s]);
     setShowModal(false);
     Swal.fire({
@@ -294,13 +389,16 @@ export default function DoctorAppointment() {
   }
 
   return (
-    <div className="c-container b-p">
-      <header className="mb-6">
-        <h1 className="title-section" style={{ marginBottom: "10px" }}>Book a Doctor Appointment</h1>
-        <p className="text-sm">Search, filter and book from our list of verified doctors.</p>
+    <div className="container py-8 flex flex-col gap-6">
+      <header>
+        <h1 className="title-section">Book a Doctor Appointment</h1>
+        <p className="text-sm">
+          Search, filter and book from our list of verified doctors.
+        </p>
       </header>
 
-      <section className="grid md:grid-cols-3 gap-4 mb-6">
+      {/* Navigation Section Start */}
+      <section className="grid md:grid-cols-3 gap-4">
         <div className="md:col-span-2 flex gap-2">
           <input
             className="flex-1 p-2 border border-primary rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
@@ -308,12 +406,22 @@ export default function DoctorAppointment() {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
           />
-          <select className="p-2 border border-primary focus:outline-none focus:ring-2 focus:ring-primary rounded-md select" value={specialty} onChange={(e) => setSpecialty(e.target.value)}>
+          <select
+            className="p-2 border border-primary focus:outline-none focus:ring-2 focus:ring-primary rounded-md select"
+            value={specialty}
+            onChange={(e) => setSpecialty(e.target.value)}
+          >
             {specialties.map((s) => (
-              <option key={s} value={s}>{s}</option>
+              <option key={s} value={s}>
+                {s}
+              </option>
             ))}
           </select>
-          <select className="p-2 border border-primary focus:outline-none focus:ring-2 focus:ring-primary rounded-md select" value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
+          <select
+            className="p-2 border border-primary focus:outline-none focus:ring-2 focus:ring-primary rounded-md select"
+            value={sortBy}
+            onChange={(e) => setSortBy(e.target.value)}
+          >
             <option value="rating">Sort: Rating</option>
             <option value="experience">Sort: Experience</option>
             <option value="fee">Sort: Fee (low to high)</option>
@@ -321,23 +429,42 @@ export default function DoctorAppointment() {
         </div>
 
         <div className="flex items-center justify-end gap-3">
-          <div className="text-sm ">Total doctors: <span className="font-semibold">{filtered.length}</span></div>
+          <div className="text-sm ">
+            Total doctors:{" "}
+            <span className="font-semibold">{filtered.length}</span>
+          </div>
         </div>
       </section>
 
+      {/* Navigation Section End */}
+
       <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
         {filtered.map((doc) => (
-          <div key={doc.id} className="flex items-center gap-4 p-4 border border-primary rounded-lg shadow-sm">
-            <img src={doc.avatar} alt={doc.name} className="w-20 h-20 rounded-full object-cover" />
+          <div
+            key={doc.id}
+            className="flex items-center gap-4 p-4 border border-primary rounded-lg shadow-sm"
+          >
+            <img
+              src={doc.avatar}
+              alt={doc.name}
+              className="w-20 h-20 rounded-full object-cover"
+            />
             <div className="flex-1">
               <div className="flex items-center justify-between">
                 <div>
                   <h2 className="text-lg font-semibold">{doc.name}</h2>
-                  <div className="text-sm text-gray-600">{doc.specialty} • {doc.location}</div>
+                  <div className="text-sm text-gray-600">
+                    {doc.specialty} • {doc.location}
+                  </div>
                 </div>
                 <div className="text-right">
-                  <div className="text-sm">Experience: <span className="font-medium">{doc.experience} yrs</span></div>
-                  <div className="text-sm">Rating: <span className="font-medium">{doc.rating}</span></div>
+                  <div className="text-sm">
+                    Experience:{" "}
+                    <span className="font-medium">{doc.experience} yrs</span>
+                  </div>
+                  <div className="text-sm">
+                    Rating: <span className="font-medium">{doc.rating}</span>
+                  </div>
                 </div>
               </div>
 
@@ -363,13 +490,44 @@ export default function DoctorAppointment() {
         ))}
       </section>
 
+      {/* Bookings list (simple) */}
+      <section className="">
+        <h3 className="text-lg font-semibold mb-2">Your Recent Bookings</h3>
+        {bookings.length === 0 ? (
+          <div className="text-sm text-gray-500">
+            No bookings yet. Book an appointment to see it listed here.
+          </div>
+        ) : (
+          <div className="space-y-3">
+            {bookings.map((b) => (
+              <div
+                key={b.id}
+                className="p-3 border rounded flex items-center justify-between"
+              >
+                <div>
+                  <div className="font-medium">{b.doctorName}</div>
+                  <div className="text-sm">
+                    {b.patientName} • {b.slot}
+                  </div>
+                </div>
+                <div className="text-sm">Phone: {b.phone}</div>
+              </div>
+            ))}
+          </div>
+        )}
+      </section>
+
       {/* Booking Modal */}
       {showModal && selectedDoctor && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
           <div className="bg-base-200 rounded-lg w-full max-w-xl p-5">
             <div className="flex items-center justify-between mb-4">
-              <h3 className="text-lg font-semibold">Book Appointment — {selectedDoctor.name}</h3>
-              <button className="" onClick={() => setShowModal(false)}>Close</button>
+              <h3 className="text-lg font-semibold">
+                Book Appointment — {selectedDoctor.name}
+              </h3>
+              <button className="" onClick={() => setShowModal(false)}>
+                Close
+              </button>
             </div>
             <form onSubmit={handleBookSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -378,7 +536,12 @@ export default function DoctorAppointment() {
                   <input
                     className="w-full p-2 border rounded border-primary focus:outline-none focus:ring-2 focus:ring-primary"
                     value={bookingForm.patientName}
-                    onChange={(e) => setBookingForm((s) => ({ ...s, patientName: e.target.value }))}
+                    onChange={(e) =>
+                      setBookingForm((s) => ({
+                        ...s,
+                        patientName: e.target.value,
+                      }))
+                    }
                     required
                   />
                 </div>
@@ -388,7 +551,9 @@ export default function DoctorAppointment() {
                     className="w-full p-2 border rounded border-primary focus:outline-none focus:ring-2 focus:ring-primary"
                     value={bookingForm.phone}
                     type="number"
-                    onChange={(e) => setBookingForm((s) => ({ ...s, phone: e.target.value }))}
+                    onChange={(e) =>
+                      setBookingForm((s) => ({ ...s, phone: e.target.value }))
+                    }
                     required
                   />
                 </div>
@@ -397,44 +562,39 @@ export default function DoctorAppointment() {
                   <select
                     className="w-full p-2 border rounded border-primary focus:outline-none focus:ring-2 focus:ring-primary"
                     value={bookingForm.slot}
-                    onChange={(e) => setBookingForm((s) => ({ ...s, slot: e.target.value }))}
+                    onChange={(e) =>
+                      setBookingForm((s) => ({ ...s, slot: e.target.value }))
+                    }
                     required
                   >
                     {selectedDoctor.availableSlots.map((slt) => (
-                      <option key={slt} value={slt}>{slt}</option>
+                      <option key={slt} value={slt}>
+                        {slt}
+                      </option>
                     ))}
                   </select>
                 </div>
               </div>
 
               <div className="mt-4 flex justify-end gap-2">
-                <button type="button" className="px-4 py-2 border rounded hover:bg-primary hover:border-primary transition-colors duration-300 hover:text-base-100" onClick={() => setShowModal(false)}>Cancel</button>
-                <button type="submit" className="px-4 py-2 bg-primary text-primary-content border border-primary rounded hover:bg-base-100 hover:text-secondary transition-colors duration-300 hoverborder-secondary">Confirm</button>
+                <button
+                  type="button"
+                  className="px-4 py-2 border rounded hover:bg-primary hover:border-primary transition-colors duration-300 hover:text-base-100"
+                  onClick={() => setShowModal(false)}
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  className="px-4 py-2 bg-primary text-primary-content border border-primary rounded hover:bg-base-100 hover:text-secondary transition-colors duration-300 hoverborder-secondary"
+                >
+                  Confirm
+                </button>
               </div>
             </form>
           </div>
         </div>
       )}
-
-      {/* Bookings list (simple) */}
-      <section className="mt-8">
-        <h3 className="text-lg font-semibold mb-2">Your Recent Bookings</h3>
-        {bookings.length === 0 ? (
-          <div className="text-sm text-gray-500">No bookings yet. Book an appointment to see it listed here.</div>
-        ) : (
-          <div className="space-y-3">
-            {bookings.map((b) => (
-              <div key={b.id} className="p-3 border rounded flex items-center justify-between">
-                <div>
-                  <div className="font-medium">{b.doctorName}</div>
-                  <div className="text-sm">{b.patientName} • {b.slot}</div>
-                </div>
-                <div className="text-sm">Phone: {b.phone}</div>
-              </div>
-            ))}
-          </div>
-        )}
-      </section>
     </div>
   );
 }

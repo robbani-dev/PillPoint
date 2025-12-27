@@ -82,35 +82,38 @@ const feedbacks = [
 
 const CustomFeedback = () => {
   return (
-    <section className="c-container bg-base-200">
-      <h2 className="title-section">Customer Feedback</h2>
-
-      <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
-        pagination={{ clickable: true }}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        breakpoints={{
-          320: { slidesPerView: 1 },
-          640: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
-        }}
-        modules={[Pagination, Autoplay]}
-        className="max-w-6xl mx-auto"
-      >
-        {feedbacks.map(({ id, name, role, feedback }) => (
-          <SwiperSlide key={id}>
-            <div className="bg-white shadow-md rounded-2xl p-6 hover:shadow-lg transition min-h-[200px]">
-              <p className="text-gray-700 italic mb-4">"{feedback}"</p>
-              <h3 className="font-semibold text-lg">{name}</h3>
-              <p className="text-sm text-gray-500">{role}</p>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+    <section className="bg-base-200 py-8 rounded-2xl">
+      <div className="container flex flex-col gap-4">
+        <h2 className="title-section">Customer Feedback</h2>
+        <div>
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={30}
+            pagination={{ clickable: true }}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            breakpoints={{
+              320: { slidesPerView: 1 },
+              640: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+            }}
+            modules={[Pagination, Autoplay]}
+            className="max-w-6xl mx-auto"
+          >
+            {feedbacks.map(({ id, name, role, feedback }) => (
+              <SwiperSlide key={id}>
+                <div className="bg-white shadow-md rounded-2xl p-6 my-10 hover:shadow-lg transition min-h-[200px]">
+                  <p className="text-gray-700 italic mb-4">"{feedback}"</p>
+                  <h3 className="font-semibold text-lg">{name}</h3>
+                  <p className="text-sm text-gray-500">{role}</p>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </div>
     </section>
   );
 };

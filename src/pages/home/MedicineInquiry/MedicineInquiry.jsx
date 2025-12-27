@@ -34,7 +34,7 @@ export default function MedicineInquiry() {
     });
   };
 
-  return (<div className="c-container">
+  return (<div className="container">
     <div className="">
       <h2 className="title-section">
         Medicine Inquiry

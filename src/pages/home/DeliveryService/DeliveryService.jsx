@@ -42,7 +42,7 @@ export default function DeliveryService() {
   };
 
   return (
-    <div className="c-container">
+    <div className="container">
       <h2 className="title-section">Delivery Service</h2>
 
       <form

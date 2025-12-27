@@ -74,7 +74,7 @@ const CategoryMedicine = () => {
   return (
     <>
       {categoryMedicines?.length >= 1 ? (
-        <div className="overflow-x-auto c-container b-p">
+        <div className="overflow-x-auto container b-p">
           <table className="table">
             <thead>
               <tr>

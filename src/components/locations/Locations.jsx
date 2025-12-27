@@ -17,7 +17,7 @@ export default function Locations() {
       address: "12 Shahbagh Rd, Dhaka 1000",
       phone: "+8801711-000001",
       hours: "8:00 AM - 10:00 PM",
-      lat: 23.7350,
+      lat: 23.735,
       lng: 90.4125,
     },
     {
@@ -67,7 +67,7 @@ export default function Locations() {
       address: "3 Riverfront Ln, Barishal 8200",
       phone: "+8801711-000006",
       hours: "8:30 AM - 10:00 PM",
-      lat: 22.7010,
+      lat: 22.701,
       lng: 90.3535,
     },
     {
@@ -123,8 +123,8 @@ export default function Locations() {
   });
 
   return (
-    <section className="c-container b-p">
-      <div className="flex items-center justify-between mb-6">
+    <section className="container py-8 flex flex-col gap-4">
+      <div className="flex items-center justify-between">
         <h2 className="title-section">PillPoint branches</h2>
         <input
           aria-label="Search locations"
@@ -134,36 +134,48 @@ export default function Locations() {
           className="border border-primary rounded-md px-3 py-2 w-64 focus:outline-none focus:ring-2 focus:ring-primary"
         />
       </div>
+      <div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
+          {filtered.map((loc) => (
+            <div
+              key={loc.id}
+              className=" rounded-2xl border border-primary shadow p-4"
+            >
+              <h3 className="text-lg font-medium">{loc.name}</h3>
+              <p className="text-sm ">
+                {loc.city} — {loc.address}
+              </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
-        {filtered.map((loc) => (
-          <div key={loc.id} className=" rounded-2xl border border-primary shadow p-4">
-            <h3 className="text-lg font-medium">{loc.name}</h3>
-            <p className="text-sm ">{loc.city} — {loc.address}</p>
+              <div className="mt-3 text-sm ">
+                <div>
+                  Phone:{" "}
+                  <a href={`tel:${loc.phone}`} className="underline">
+                    {loc.phone}
+                  </a>
+                </div>
+                <div>Hours: {loc.hours}</div>
+              </div>
 
-            <div className="mt-3 text-sm ">
-              <div>Phone: <a href={`tel:${loc.phone}`} className="underline">{loc.phone}</a></div>
-              <div>Hours: {loc.hours}</div>
+              <div className="mt-4 flex items-center gap-2 ">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href={`https://www.google.com/maps/search/?api=1&query=${loc.lat},${loc.lng}`}
+                  className="btn bg-primary text-primary-content btn-sm px-3 py-1 rounded-md border"
+                >
+                  View on Map
+                </a>
+              </div>
             </div>
+          ))}
+        </div>
 
-            <div className="mt-4 flex items-center gap-2 ">
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href={`https://www.google.com/maps/search/?api=1&query=${loc.lat},${loc.lng}`}
-                className="btn bg-primary text-primary-content btn-sm px-3 py-1 rounded-md border"
-              >
-                View on Map
-              </a>
-
-            </div>
-          </div>
-        ))}
+        {filtered.length === 0 && (
+          <p className="mt-6 text-center text-gray-500">
+            No locations match your search.
+          </p>
+        )}
       </div>
-
-      {filtered.length === 0 && (
-        <p className="mt-6 text-center text-gray-500">No locations match your search.</p>
-      )}
     </section>
   );
 }

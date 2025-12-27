@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet";
 const Dashboard = () => {
   const dashboard = true;
   return (
-    <div>
+    <div className="max-w-[1620px] mx-auto ">
       <Helmet>
         <title>PillPoint | Dashboard</title>
       </Helmet>

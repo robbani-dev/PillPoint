@@ -134,7 +134,7 @@ const Navbar = ({ dashboard }) => {
                       role="button"
                       className="btn btn-ghost btn-circle avatar"
                     >
-                      <div className="w-10 rounded-full">
+                      <div className="w-10 rounded-full border border-secondary">
                         <img
                           alt={user?.displayName}
                           src={
@@ -147,20 +147,20 @@ const Navbar = ({ dashboard }) => {
                     </div>
                   </div>
                 </div>
-                <div className="">
+                <div >
                   <ul
                     tabIndex={0}
                     className="menu menu-sm dropdown-content rounded-box text-secondary-content bg-secondary  mt-3 w-52 p-2 shadow"
                   >
-                    <li>
+                    <li className="hover:bg-primary rounded-sm">
                       <Link to="/dashboard/settings" className="justify-between">
                         Update Profile
                       </Link>
                     </li>
-                    <li>
+                    <li className="hover:bg-primary rounded-sm">
                       <Link to="/dashboard">Dashboard</Link>
                     </li>
-                    <li>
+                    <li className="hover:bg-primary rounded-sm">
                       <button
                         onClick={() => {
                           logOut();
