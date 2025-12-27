@@ -16,6 +16,7 @@ const ProductPage = () => {
   const handleAddToCart = (e) => {
     if (!user) {
       navigate("/login");
+      return;
     }
     setLoading(true)
     e.preventDefault();
@@ -225,7 +226,7 @@ const ProductPage = () => {
 
         </div>
       </div>
-      <DiscountSlider/>
+      <DiscountSlider />
     </div>
   );
 };

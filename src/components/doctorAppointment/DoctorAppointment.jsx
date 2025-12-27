@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Swal from "sweetalert2";
 
 // DoctorAppointment.jsx
 // Single-file React component (default export) for a Doctors Appointment page.
@@ -259,6 +260,7 @@ export default function DoctorAppointment() {
     setShowModal(true);
   }
 
+
   function handleBookSubmit(e) {
     e.preventDefault();
     // basic validation
@@ -277,15 +279,24 @@ export default function DoctorAppointment() {
       slot: bookingForm.slot,
     };
 
+
+
     setBookings((s) => [newBooking, ...s]);
     setShowModal(false);
-    alert(`Appointment confirmed with ${selectedDoctor.name} on ${bookingForm.slot}`);
+    Swal.fire({
+      position: "top-end",
+      icon: "success",
+      title: `Appointment confirmed with ${selectedDoctor.name} on ${bookingForm.slot}`,
+      showConfirmButton: false,
+      timer: 3000,
+    });
+    // alert(`Appointment confirmed with ${selectedDoctor.name} on ${bookingForm.slot}`);
   }
 
   return (
     <div className="c-container b-p">
       <header className="mb-6">
-        <h1 className="title-section" style={{marginBottom: "10px"}}>Book a Doctor Appointment</h1>
+        <h1 className="title-section" style={{ marginBottom: "10px" }}>Book a Doctor Appointment</h1>
         <p className="text-sm">Search, filter and book from our list of verified doctors.</p>
       </header>
 
@@ -314,7 +325,7 @@ export default function DoctorAppointment() {
         </div>
       </section>
 
-      <section className="grid md:grid-cols-3 gap-4">
+      <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
         {filtered.map((doc) => (
           <div key={doc.id} className="flex items-center gap-4 p-4 border border-primary rounded-lg shadow-sm">
             <img src={doc.avatar} alt={doc.name} className="w-20 h-20 rounded-full object-cover" />
@@ -339,12 +350,12 @@ export default function DoctorAppointment() {
                   >
                     Book
                   </button>
-                  <button
+                  {/* <button
                     className="px-3 py-1 border border-primary rounded-md text-sm hover:bg-primary hover:text-base-100 transition-all duration-200"
-                    onClick={() => window.alert(`Visiting details for ${doc.name}:\nLocation: ${doc.location}\nAvailable slots: ${doc.availableSlots.join(", ")}`)}
+                    onClick={() => handleView(doc)}
                   >
                     View
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
@@ -376,6 +387,7 @@ export default function DoctorAppointment() {
                   <input
                     className="w-full p-2 border rounded border-primary focus:outline-none focus:ring-2 focus:ring-primary"
                     value={bookingForm.phone}
+                    type="number"
                     onChange={(e) => setBookingForm((s) => ({ ...s, phone: e.target.value }))}
                     required
                   />

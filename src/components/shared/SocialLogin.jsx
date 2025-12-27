@@ -20,7 +20,7 @@ const SocialLogin = () => {
         const newUser = {
           username: data.displayName,
           email: data.email,
-          userType: "Customer",
+          userType: "Seller",
           profilePicture: data.photoURL,
           creationTime: now,
           cart: [],

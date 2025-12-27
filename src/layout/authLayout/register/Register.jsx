@@ -162,7 +162,7 @@ const Register = () => {
           <label className="label">User Type</label>
           <select
             {...register("userType")}
-            defaultValue="Customer"
+            defaultValue="Seller"
             className="select i-s"
           >
             <option value="Customer">Customer</option>

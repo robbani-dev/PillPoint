@@ -4,16 +4,16 @@ import { Link } from "react-router"
 
 const ShopCard = ({ item }) => {
     return (
-        <Link to={`/product/${item._id}`} className="card shadow-sm hover:shadow-lg transition-shadow duration-200">
+        <Link to={`/product/${item._id}`} className="card shadow-xs shadow-primary hover:shadow-lg transition-shadow duration-200">
 
             <div>
                 <figure>
                     <img
                         src={item.imgUrl}
                         alt={item.itemName}
-                        className="h-42 object-cover transition-transform duration-300 hover:scale-105"></img>
+                        className="h-42 object-cover transition-transform duration-300 hover:scale-105 rounded-t-sm"></img>
                 </figure>
-                <div className="p-2">
+                <div className="p-2 ">
                     <div className="p-2 flex justify-between items-center">
                         <h2 className="text-lg font-bold">
                             {item.itemName.length > 12

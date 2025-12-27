@@ -9,7 +9,7 @@ const Navbar = ({ dashboard }) => {
   const navigate = useNavigate();
   // console.log(userFromMongo);
   return (
-    <div className="navbar bg-primary opacity-[95%] shadow-sm md:px-[6vw] text-primary-content">
+    <div className="navbar bg-primary opacity-[95%] shadow-sm md:px-[6vw] text-primary-content sticky top-0 z-10">
       <div className="navbar-start">
         <div className={`dropdown ${dashboard && "hidden"}`}>
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -31,14 +31,14 @@ const Navbar = ({ dashboard }) => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-base-100 text-base-content rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             <Links />
           </ul>
         </div>
         <p
           className={`${dashboard && "hidden"
-            } btn btn-ghost  border border-transparent  hover:bg-transparent transition-all duration-300 text-xl`}
+            }  border border-transparent  hover:bg-transparent transition-all duration-300 text-xl`}
         >
           <Logo />
         </p>
@@ -122,7 +122,7 @@ const Navbar = ({ dashboard }) => {
                   </div>
                 </div>
               </div>
-              <div className="dropdown dropdown-end">
+              <div className="dropdown dropdown-end relative">
                 <div
                   tabIndex={0}
                   role="button"
@@ -147,29 +147,30 @@ const Navbar = ({ dashboard }) => {
                     </div>
                   </div>
                 </div>
-                <ul
-                  tabIndex={0}
-                  className="menu menu-sm dropdown-content bg-base-200 rounded-box text-base-content z-1 mt-3 w-52 p-2 shadow"
-                >
-                  <li>
-                    <Link to="/dashboard/settings" className="justify-between">
-                      Update Profile
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/dashboard">Dashboard</Link>
-                  </li>
-                  <li>
-                    <button
-                      onClick={() => {
-                        logOut();
-                        navigate("/");
-                      }}
-                    >
-                      Logout
-                    </button>
-                  </li>
-                </ul>
+                <div className="">
+                  <ul
+                    tabIndex={0}
+                    className="menu menu-sm dropdown-content rounded-box text-secondary-content bg-secondary  mt-3 w-52 p-2 shadow"
+                  >
+                    <li>
+                      <Link to="/dashboard/settings" className="justify-between">
+                        Update Profile
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/dashboard">Dashboard</Link>
+                    </li>
+                    <li>
+                      <button
+                        onClick={() => {
+                          logOut();
+                          navigate("/");
+                        }}
+                      >
+                        Logout
+                      </button>
+                    </li>
+                  </ul></div>
               </div>
             </div>
           </div>

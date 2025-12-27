@@ -17,7 +17,7 @@ const Dashboard = () => {
           <Navbar dashboard={dashboard} />
           <Outlet />
         </div>
-        <div className="drawer-side">
+        <div className="drawer-side scrollable-content">
           <label
             htmlFor="my-drawer-2"
             aria-label="close sidebar"
@@ -27,9 +27,9 @@ const Dashboard = () => {
             <li>
               <Logo />
             </li>
-            <div className="space-y-[1px]">
+            <li className="space-y-[1px]">
               {<DashboradLinks />}
-            </div>
+            </li>
           </ul>
         </div>
       </div>

@@ -65,7 +65,7 @@ const Login = () => {
             type="email"
             className="input i-s"
             placeholder="Email"
-            defaultValue="admin@pillpoint.com"
+            // defaultValue="admin@pillpoint.com"
           />
           {errors.email?.type === "required" && (
             <p className="text-warning">You do not provide an email address.</p>
@@ -112,7 +112,7 @@ const Login = () => {
               Register.
             </Link>
           </p>
-          <div className="border p-1 rounded-sm">
+          <div className="border p-1 rounded-sm hidden">
             <p className="italic text-primary">Login Email: admin@pillpoint.com</p>
             <p className="italic text-primary">Login password: Admin2025</p>
           </div>

@@ -12,7 +12,7 @@ const HomeLayout = () => {
       <div className="sticky top-0 z-10">
         <Navbar />
       </div>
-      <div className="min-h-[70vh]">
+      <div className="min-h-[90vh]">
         <Outlet />
       </div>
       <Footer />
